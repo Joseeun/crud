@@ -1,4 +1,5 @@
-
+from django.http import request
+from blog.forms import PostForm, CommentForm #commentForm 추가
 from .forms import PostForm
 from django.shortcuts import get_object_or_404, redirect, render
 from .models import Post
@@ -57,3 +58,18 @@ def detail(request,id):
 def read(request):
     posts = Post.objects
     return render(request, 'blog/read.html',{'posts':posts})
+
+#댓글 함수
+def detail(request, id):
+    post = get_object_or_404(Post, id=id)
+    if request.method == "POST":
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.post_id = post
+            comment.text = form.cleaned_data['text']
+            comment.save()
+            return redirect('detail',id)
+    else:
+        form=CommentForm()
+        return render(request, "blog/detail.html", {'post':post, 'form':form})
