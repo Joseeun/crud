@@ -7,6 +7,15 @@
         <p>날짜 : {{ post.pub_date }}</p>
         <p>작성자 : {{post.writer}}</p>
         <p>내용 : {{post.body}}</p>
+
+        {% for hashtag in post.hashtags.all %}
+          <span>{{ hashtag.name }}</span>
+        {% endfor %}
+        <br>
+
+
+
+
         <a href = "{% url 'edit' post.id %}">수정하기</a>
         <a href="{% url 'delete' post.id %}">삭제하기</a>
         <br>

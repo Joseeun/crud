@@ -1,13 +1,20 @@
 from django import forms
-from .models import Post,Comment #Comment 기능 추가!
+from django.forms import fields
+from .models import Post,Comment,Hashtag #Comment,Hashtag 기능 추가!
 
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ['title', 'writer', 'body']
+        fields = ['title', 'writer', 'body', 'hashtags']
 
 # CommentForm 추가
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ['text']
+
+# HashtagForm 추가
+class HashtagForm(forms.ModelForm):
+    class Meta:
+        model = Hashtag
+        fields = ['name']
