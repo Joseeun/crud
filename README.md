@@ -13,6 +13,13 @@
 ✨ 2021년 6월 25일 ✨
 <br>
 <br>
+
+![111111111111111111111](https://user-images.githubusercontent.com/80515918/123370976-c96e9400-d5bb-11eb-8c4d-266b095f9519.png)
+
+<br>
+해쉬태그 추가하는 기능을 복습했음 ! !
+<br>
+<br>
 <img width="703" alt="KakaoTalk_20210625_073050101" src="https://user-images.githubusercontent.com/80515918/123365814-02a20680-d5b2-11eb-8f2c-b21ad64a1142.png">
 
 <br>
@@ -20,5 +27,7 @@
 <br>
 <br>
 <img width="956" alt="2222" src="https://user-images.githubusercontent.com/80515918/123366040-6cbaab80-d5b2-11eb-9407-08ba24a4229f.PNG">
+
+![무제222222222222222](https://user-images.githubusercontent.com/80515918/123370986-cb385780-d5bb-11eb-837d-74f1a4009a5f.png)
 
 
