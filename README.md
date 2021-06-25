@@ -28,6 +28,5 @@
 <br>
 <img width="956" alt="2222" src="https://user-images.githubusercontent.com/80515918/123366040-6cbaab80-d5b2-11eb-9407-08ba24a4229f.PNG">
 
-<img width="313" alt="dkdld" src="https://user-images.githubusercontent.com/80515918/123371258-5e718d00-d5bc-11eb-8012-0d7667039e4f.PNG">
 
 
