@@ -2,20 +2,20 @@
 {% block content %}
 <section class="page-section" id="services">
     <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0"><h1>{{ hashtag }}가 있는 게시물 목록</h1></h2>
+        <h2 class="text-center mt-0">{{hashtag}}가 있는 게시글 목록</h2>
 
 
 
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            hashtag 검색
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            {% for hashtag in hashtags.all %}
-            <a class="dropdown-item" href="{% url 'search' hashtag.id %}">{{ hashtag.name }}</a>
-            {% endfor %}
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              hashtag 검색
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              {% for hashtag in hashtags.all %}
+              <a class="dropdown-item" href="{% url 'search' hashtag.id %}">{{ hashtag.name }}</a>
+              {% endfor %}
+            </div>
           </div>
-        </div>
           <br>
           <br>
           <br>
@@ -26,7 +26,7 @@
 
 
 
-        {% for posts in posts.all %}
+        {% for posts in hashtag.post_set.all %}
         <p>제목 : <a href="{% url 'detail' posts.id %}">{{ posts.title }}</a></p>
         <p>작성자 : {{ posts.writer }}</p>
         <p>날짜 : {{ posts.pub_date }}</p>

@@ -25,9 +25,20 @@ def create(request):
             return redirect('read')
     else:
         form = PostForm
-        return render(request, 'blog/write.html', {'form':form,})
+        return render(request, 'blog/write.html', {'form':form})
 
-
+def blogform(request, blog=None):
+    if request.method == 'POST':
+        form = PostForm(request.POST, instance=blog)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.pub_date = timezone.datetime.now()
+            post.save()
+            form.save_m2m()
+            return redirect('read')
+    else:
+        form = PostForm(instance=blog)
+        return render(request, 'blog/new.html', {'form':form})
 
 def edit(request,id):
     post = get_object_or_404(Post,id=id)
@@ -84,14 +95,14 @@ def hashtagform(request, hashtag=None):
             if Hashtag.objects.filter(name=form.cleaned_data['name']):
                 form = HashtagForm()
                 error_message = "이미 존재하는 해시 태그 입니다. "
-                return render(request, 'hashtag.html', {'form':form, "error_message":error_message})
+                return render(request, 'blog/hashtag.html', {'form':form, "error_message":error_message})
             else:
                 hashtag.name = form.cleaned_data['name']
                 hashtag.save()
             return redirect('read')
     else:
         form = HashtagForm(instance=hashtag)
-        return render(request, 'hashtag.html', {'form':form})
+        return render(request, 'blog/hashtag.html', {'form':form})
 
 def search(request, hashtag_id):
     hashtag = get_object_or_404(Hashtag, pk=hashtag_id)
