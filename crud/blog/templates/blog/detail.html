@@ -7,6 +7,12 @@
         <p>날짜 : {{ post.pub_date }}</p>
         <p>작성자 : {{post.writer}}</p>
         <p>내용 : {{post.body}}</p>
+        <!-- 사진 확인-->
+        {% if posts.image %}
+            <img src="{{ post.image.url }}" width="250" height="250" alt="Card image cap">
+        {% endif %}
+        <br>
+
         
 
         {% for hashtag in post.hashtags.all %}

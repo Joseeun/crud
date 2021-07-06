@@ -1,5 +1,5 @@
 <!-- new 임 글 작성 페이지 -->
-{%extends 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
 {% block content %}
 <section class="page-section bg-primaty" id="about">
@@ -8,7 +8,7 @@
             <div class="col-lg-8 text-center">
                 <h1>새로 글 작성하기</h1>
                 <hr>
-                <form action="{% url 'create' %}"method="POST">
+                <form action="{% url 'create' %}"method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     <table>
                         {{form.as_table}}

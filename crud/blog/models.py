@@ -8,6 +8,7 @@ class Post(models.Model):
     writer = models.CharField( max_length=15, default='닉네임을 입력해주세요')
     body = models.TextField()
     hashtags = models.ManyToManyField('Hashtag', blank=True)
+    image = models.ImageField(upload_to='images/', blank=True)
 
     def __str__(self):
         return self.title
