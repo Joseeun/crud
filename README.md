@@ -38,13 +38,18 @@
 ✨ 2021년 7월 6일 ✨
 <br>
 <br>
-
-
+<img width="630" alt="이미지" src="https://user-images.githubusercontent.com/80515918/124541174-d90f9780-de5b-11eb-82b7-0af2484cb799.PNG">
+<img width="259" alt="이미지 캡쳐" src="https://user-images.githubusercontent.com/80515918/124541179-dad95b00-de5b-11eb-8fb6-834e2c0cef36.PNG">
 <br>
 글쓰기 페이지에서 이미지를 추가하는 기능도 구현하였고 ,
 <br>
-
-
+<img width="961" alt="헤더" src="https://user-images.githubusercontent.com/80515918/124541269-05c3af00-de5c-11eb-804c-74fc43862fc3.PNG">
 <br>
 회원가입 페이지와 로그인, 로그아웃을 할수 있는 기능도 구현하였다 !
 <br>
+<img width="646" alt="회원가입" src="https://user-images.githubusercontent.com/80515918/124541273-078d7280-de5c-11eb-89de-7ae12342e508.PNG">
+<br>
+이게 회원가입 !
+<br>
+<img width="286" alt="로그인" src="https://user-images.githubusercontent.com/80515918/124541275-09573600-de5c-11eb-8a7f-1e57faebe8c3.PNG">
+이게 로그인 !
