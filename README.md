@@ -55,3 +55,12 @@
 <img width="286" alt="로그인" src="https://user-images.githubusercontent.com/80515918/124541275-09573600-de5c-11eb-8a7f-1e57faebe8c3.PNG">
 <br>
 이게 로그인 !
+
+✨ 2021년 7월 16일 ✨
+<br>
+커스텀 유저 추가 구현했음 !
+<br>
+<br>
+<img width="645" alt="캡처222" src="https://user-images.githubusercontent.com/80515918/125837294-db5c6261-793d-4580-b652-7cf072183431.PNG">
+<br>
+커스텀 유저 추가 구현해서 회원가입 페이지에서 주소, 나이 등록할 수 있게 함 !
