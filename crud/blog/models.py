@@ -9,6 +9,15 @@ class Post(models.Model):
     body = models.TextField()
     hashtags = models.ManyToManyField('Hashtag', blank=True)
     image = models.ImageField(upload_to='images/', blank=True)
+    like = models.ManyToManyField(
+        settings.AUTH_USER_MODEL,
+        blank=True,
+        related_name='likes'
+    )
+
+    def count_likes(self):
+        return self.like.count()
+
 
     def __str__(self):
         return self.title
