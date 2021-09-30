@@ -73,24 +73,30 @@
 ✔blog/views.py에 user가 존재할때 좋아요 버튼 가능 구현되게 def 함수 값 넣고,
 <br> 한번 누르면 좋아요, 다시 한번 누르면 좋아요 취소 창 뜨게 하기
 <br>
-<img>
+<img><img width="512" alt="캡처1" src="https://user-images.githubusercontent.com/80515918/135503995-71a0fc58-e9bd-49da-9ac4-1c8a1d97702e.PNG">
 <br>
 
 ✔사용자가 버튼을 누를 수 있도록 detail.html에 자바스크립트 이용하여 기능 추가
 
 <br>
-<img>
+
+<img width="638" alt="캡처2" src="https://user-images.githubusercontent.com/80515918/135504011-2702e948-10f5-4d95-b7d5-6058c9bdc0cc.PNG">
 <br>
 ✔ 기능 구현 가능하도록 urls.py에 post_like추가
 <br>
-<img>
+<img width="383" alt="캡처3" src="https://user-images.githubusercontent.com/80515918/135504023-83c5a3c1-ba2f-4b6f-b1c4-a3112cbae7f9.PNG">
 <br>
 
 ✔models.py에 like기능 class, def 함수 추가
 <br>
-<img>
+
+<img width="497" alt="캡처4" src="https://user-images.githubusercontent.com/80515918/135504038-8af0d8b3-810b-4493-a976-52350c459976.PNG">
 <br>
 <br>
 👍결과
 <br>
-<img>
+<img width="955" alt="캡처5" src="https://user-images.githubusercontent.com/80515918/135504046-a72e6eed-f6a4-4318-8a23-1d2cf6adabe1.PNG">
+
+<img width="413" alt="캡처6" src="https://user-images.githubusercontent.com/80515918/135504056-a251432c-2bae-49ed-9082-18a279ac88fb.PNG">
+
+<img width="104" alt="캡처7" src="https://user-images.githubusercontent.com/80515918/135504068-63a50032-827d-4d71-962f-6f0f95188b00.PNG">
